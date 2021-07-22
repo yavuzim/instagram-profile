@@ -8,10 +8,13 @@
 body{
     background-color: rgb(238, 231, 231);
 }
-#header-top{
-   /* width: 1535px;*/
-    height: 60px;
+header{
     background-color: #fff;
+}
+#header-top{
+    height: 60px;
+    margin: 0 auto;
+    max-width: 1535px;
 }
 #header-logo{
     width: 125px;
