@@ -1,501 +1,192 @@
-*{
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
-body{
-    background-color: rgb(238, 231, 231);
+body {
+  background-color: rgb(238, 231, 231);
 }
-header{
-    background-color: #fff;
+header {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
 }
-#header-top{
-    height: 60px;
-    margin: 0 auto;
-    max-width: 1535px;
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 975px;
+  justify-content: space-between;
 }
-#header-logo{
-    width: 125px;
-    height: 35px;
-    display: inline-block;
-    position: relative;
-    left: 280px;
+#header-logo {
+  height: 50px;
 }
-#header-search-field{
-    width: 200px;
-    height: auto;
-    background-color: rgb(238, 231, 231);
-    display: inline-block;
-    position: relative;
-    left: 510px;
-    bottom: 5px;
-    padding: 5px;
-    border-radius: 5px;
+#header-logo > img {
+  margin: 12px 0 0 0;
 }
-#header-search-field>input{
-    position: relative;
-    top: 0px;
-    left: 62px;
-    width: 55px;
-    border: none;
-    background-color: rgb(238, 231, 231);
-    outline: none;
+#header-search-field {
+  width: 220px;
+  height: 50px;
+  position: relative;
+  left: 2%;
 }
-#header-search-field>i{
-    position: relative;
-    margin-bottom:4px;
-    left: 55px;
-    top: 5px;
-    color: rgb(155, 151, 151);
-    font-size: 12px;
+#header-search-field > div {
+  height: 28px;
+  background-color: rgb(238, 236, 236);
+  position: relative;
+  top: 10px;
+  border-radius: 5px;
 }
-#header-right{
-    width: auto;
-    height: auto;
-    display: inline-block;
-    margin-top: 15px;
-    position: relative;
-    left: 700px;
-    bottom: 5px;
+#header-search-field > div > i {
+  position: relative;
+  top: 5px;
+  left: 75px;
+  font-size: 12px;
 }
-#header-right>i{
-    margin-left: 15px;
-    font-size: 20px;
+#header-search-field > div > input {
+  width: 25px;
+  position: relative;
+  top: 4px;
+  left: 85px;
+  border: none;
+  background-color: rgb(238, 236, 236);
+  font-size: 15px;
+  outline: none;
 }
-#header-profile{
-    width: 30px;
-    height: 30px;
-    border-radius: 100px;
-    border: 1px solid;
-    display: inline-block;
-    margin-left: 15px;
-    overflow-y: hidden;
+#header-right {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-#header-profile>img{
-    width: 30px;
-    height: 30px;
-    border-radius: 100px;
-    border: 1px solid;
+#header-right > .menu {
+  margin-right: 15px;
 }
-#header-right>#header-profile{
-    position: relative;
-    top: 4px;
+#header-right > .menu > span {
+  margin-left: 22px;
+  font-size: 24px;
 }
-@media only screen and (min-width:1200px){ /* XL*/
-    #header-logo{
-        width: 125px;
-        height: 35px;
-        display: inline-block;
-        position: relative;
-        left: 280px;
-    }    
-    #header-search-field{
-        width: 200px;
-        height: auto;
-         background-color: rgb(238, 231, 231);
-        display: inline-block;
-        position: relative;
-        left: 510px;
-        bottom: 5px;
-        padding: 5px;
-        border-radius: 5px;
-    }    
-    #header-right{
-        width: auto;
-        height: auto;
-        display: inline-block;
-        margin-top: 15px;
-        position: relative;
-        left: 700px;
-        bottom: 5px;
-    }
+#header-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: 1px solid;
+  display: inline-block;
+  margin-left: 15px;
+  overflow-y: hidden;
+  position: relative;
+  right: 15px;
+  bottom: 3px;
 }
-@media only screen and (min-width:992px) and (max-width:1199px){ /* L */
-    #header-logo{
-        width: 125px;
-        height: 35px;
-        display: inline-block;
-        position: relative;
-        left: 250px;
-    }
-    #header-search-field{
-        width: 200px;
-        height: auto;
-         background-color: rgb(238, 231, 231);
-        display: inline-block;
-        position: relative;
-        left: 300px;
-        bottom: 5px;
-        padding: 5px;
-        border-radius: 5px;
-    } 
-    #header-right{
-        width: auto;
-        height: auto;
-        display: inline-block;
-        margin-top: 15px;
-        position: relative;
-        left: 350px;
-        bottom: 5px;
-    }
+#header-profile > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: 1px solid;
 }
-@media only screen and (min-width:768px) and (max-width:991px){ /* N */
-    #header-logo{
-        width: 125px;
-        height: 35px;
-        display: inline-block;
-        position: relative;
-        left: 100px;
-    }
-    #header-search-field{
-        width: 200px;
-        height: auto;
-        background-color: rgb(238, 231, 231);
-        display: inline-block;
-        position: relative;
-        left: 150px;
-        bottom: 5px;
-        padding: 5px;
-        border-radius: 5px;
-    } 
-    #header-right{
-        width: auto;
-        height: auto;
-        display: inline-block;
-        margin-top: 15px;
-        position: relative;
-        left: 200px;
-        bottom: 5px;
-    }
+section {
+  width: auto;
+  height: auto;
+  margin-top: 12px;
 }
-@media only screen and (min-width:576px) and (max-width:767px){ /* S */
-    #header-logo{
-        width: 125px;
-        height: 35px;
-        display: inline-block;
-        position: relative;
-        left: 10px;
-    }
-    #header-search-field{
-        width: 200px;
-        height: auto;
-        background-color: rgb(238, 231, 231);
-        display: inline-block;
-        position: relative;
-        left: 15px;
-        bottom: 5px;
-        padding: 5px;
-        border-radius: 5px;
-    } #header-right{
-        width: auto;
-        height: auto;
-        display: inline-block;
-        margin-top: 15px;
-        position: relative;
-        left: 20px;
-        bottom: 5px;
-    }
+.section-container {
+  display: block;
 }
-@media only screen and (max-width:574px){ /* XS */
-    #header-logo{
-        width: 125px;
-        height: 35px;
-        display: inline-block;
-        position: relative;
-        left: 10px;
-    }
-    #header-search-field{
-      display: none;
-    } #header-right{
-        width: auto;
-        height: auto;
-        display: inline-block;
-        margin-top: 15px;
-        position: relative;
-        left: 130px;
-        bottom: 5px;
-    }
+.user-info {
+  height: 180px;
+  width: 85%;
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
 }
-section{
-    width: auto;
-    height: 450px;
+.user-img {
+  width: 30%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#section-content{
-    width: 800px;
-    height: 400px;
-    position: relative;
-    left: 325px;
-    top: 10px;
+.user-img > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
 }
-#section-profile{
-    width: 800px;
-    height: 250px;
+.user-fallow {
+  width: 68%;
+  height: inherit;
 }
-#section-profile-img{
-    width: 180px;
-    height: 180px;
-    border-radius: 100px;
-    position: relative;
-    top: 12px;
-    left: 12px;
-    overflow-y: hidden;
-    display: inline-block;
+.user-fallow-top {
+  display: grid;
+  grid-template-columns: repeat(3, 28%);
 }
-#section-profile-img>img{
-    width: 180px;
-    height: 180px;
-    border-radius: 100px;
+.span-btn {
+  width: 120px;
+  height: 31px;
+  margin-top: 5px;
 }
-#section-profile-info{
-    width: 480px;
-    height: 200px;
-    display: inline-block;
-    position: relative;
-    top: 12px;
-    left: 80px;
+.span-btn > button {
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
-#section-nick{
-    display: inline-block;
-    font-size: 28px;
-    position: relative;
-    top: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(54, 53, 53);
+.settings-i {
+  margin-left: -18px;
 }
-#section-edit{
-    width: 120px;
-    height: 36px;
-    display: inline-block;
-    font-size: 28px;
-    position: relative;
-    top: 22px;
-    left: 10px;
+.nick-name,
+span > .fa-cog {
+  font-size: 28px;
+  margin-top: 8px;
 }
-#section-edit>button{
-    width: 120px;
-    height: 34px;
-    position: relative;
-    bottom: 2px;
-    font-size: 15px;
-    border-radius: 4px;
-    outline: none;
-    overflow: hidden;
-    border: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    background-color: rgb(228, 222, 222);
+.fa-cog:hover,
+button:hover {
+  cursor: pointer;
 }
-#section-edit>button:hover{
-    cursor: pointer;
+.user-fallow-center {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  margin-top: 20px;
+  font-size: 21px;
 }
-#section-settings{
-    display: inline-block;
-    position: relative;
-    top: 18px;
-    left: 13px;
+.user-fallow-bottom {
+  margin-top: 15px;
+  font-size: 18px;
 }
-#section-settings>i{
-    font-size: 25px;
+.user-fallow-bottom > span {
+  display: block;
 }
-#section-settings>i:hover{
-    cursor: pointer;
+.user-stories-field {
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
 }
-#section-fallower-field{
-    position: relative;
-    top: 35px;
-    height: auto;
+.user-stories {
+  width: 150px;
+  height: 120px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#section-fallower-field>.section-fallower{
-    display: inline-block;
+.user-stories > span > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
 }
-#section-fallower-field>.section-fallower>span{
-    font-weight: 700;
+/*
+@media only screen and (max-width: 975px) {
+   L 
 }
-.fallow{
-    margin-left: 45px;
+@media only screen and (max-width: 991px) {
+  N 
 }
-#section-profile-name{
-    position: relative;
-    top: 48px;
-    font-weight: 600;
-    font-size: 15px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+@media only screen and (max-width: 767px) {
+   S 
 }
-#section-profile-biography{
-    position: relative;
-    top: 52px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-#section-profile-link{
-    position: relative;
-    top: 56px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-#section-profile-link>a{
-    color: rgb(8, 8, 121);
-    font-weight: 600;
-}
-#section-stories-field{
-    height: 148px;
-}
-.section-stories{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    position: relative;
-    top: 15px;
-    left: 5px;
-    overflow-y: hidden;
-}
-.section-stories>img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-}
-.section-stories-name{
-    position: relative;
-    top: 20px;
-    left: 50px;
-    display: inline-block;
-}
-@media only screen and (min-width:576px) and (max-width:767px){ /* S */
-    #section-content{
-        width: 800px;
-        height: 400px;
-        border: 1px solid;
-        position: relative;
-        left: 0;
-        top: 10px;
-        background-color: red;
-    }
-    
-    #section-profile-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 500px;
-    position: relative;
-    top: -83px;
-    left: 5px;
-    overflow-y: hidden;
-    display: inline-block;
-    }
-    
-    #section-profile-img>img{
-     width: 100px;
-     height: 100px;
-    border-radius: 100px;
-    }
-    #section-profile-info{
-        width: 480px;
-        height: 200px;
-        display: inline-block;
-        position: relative;
-        top: 12px;
-        left:5px;
-        background-color: blueviolet;
-    }
-    #section-nick{
-        display: inline-block;
-        font-size: 28px;
-        position: relative;
-        top: 15px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: rgb(54, 53, 53);
-    }
-    #section-edit{
-        width: 310px;
-        height: 36px;
-        font-size: 28px;
-        position: relative;
-        top: 65px;
-        left: -148px;
-        background-color: red;
-    }
-    #section-edit>button{
-        width: 120px;
-        height: 34px;
-        position: relative;
-        bottom: 2px;
-        font-size: 15px;
-        border-radius: 4px;
-        outline: none;
-        overflow: hidden;
-        border: none;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 500;
-        background-color: rgb(228, 222, 222);
-    }
-    #section-edit>button:hover{
-        cursor: pointer;
-    }
-    #section-settings{
-        display: inline-block;
-        position: relative;
-        top: 15px;
-        left: -120px;
-        background-color: red;
-    }
-    #section-settings>i{
-        font-size: 25px;
-    }
-    #section-settings>i:hover{
-        cursor: pointer;
-    }
-    #section-fallower-field{
-        position: relative;
-        top: 35px;
-        height: auto;
-    }
-    #section-fallower-field>.section-fallower{
-        display: inline-block;
-    }
-    #section-fallower-field>.section-fallower>span{
-        font-weight: 700;
-    }
-    .fallow{
-        margin-left: 45px;
-    }
-    #section-profile-name{
-        position: relative;
-        top: 48px;
-        font-weight: 600;
-        font-size: 15px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    #section-profile-biography{
-        position: relative;
-        top: 52px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    #section-profile-link{
-        position: relative;
-        top: 56px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    #section-profile-link>a{
-        color: rgb(8, 8, 121);
-        font-weight: 600;
-    }
-}
-@media only screen and (max-width:574px){ /* XS */
-    #section-content{
-        width: 800px;
-        height: 400px;
-        border: 1px solid;
-        position: relative;
-        left: 0;
-        top: 10px;
-        background-color: blue;
-    }
-}
-
-/*nav{
-     width: auto;
-    height: 450px;
-    background-color: red;
-}
-#nav-list{
-
-}*/
+@media only screen and (max-width: 574px) {
+   XS 
+}*/ ;
