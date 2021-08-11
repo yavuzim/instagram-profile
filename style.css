@@ -12,7 +12,7 @@ header {
   background-color: #fff;
   height: auto;
   width: 100%;
-  border-bottom: 1px solid rgb(158, 152, 152);
+  border-bottom: 1px solid rgb(197, 194, 194);
 }
 .container {
   margin: 0 auto;
@@ -65,6 +65,9 @@ header {
 #header-right > .menu {
   margin-right: 15px;
 }
+#header-right > .menu > span:hover {
+  cursor: pointer;
+}
 #header-right > .menu > span > svg {
   margin-top: 5px;
 }
@@ -84,6 +87,9 @@ header {
   right: 15px;
   bottom: 3px;
 }
+#header-profile :hover {
+  cursor: pointer;
+}
 #header-profile > img {
   width: 30px;
   height: 30px;
@@ -93,10 +99,31 @@ header {
 section {
   width: auto;
   height: auto;
-  margin-top: 12px;
 }
 .section-container {
   display: block;
+}
+.drop-menu {
+  position: absolute;
+  margin-left: 740px;
+  width: 240px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+}
+.drop-menu > ul > li > div {
+  width: inherit;
+  padding: 8px;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.drop-menu > ul > li div:hover {
+  background-color: rgb(247, 243, 243);
+  cursor: pointer;
+}
+.drop-menu > ul > li > .log-out {
+  padding: 5px;
+  border-top: 1px solid rgb(80, 78, 78);
 }
 .user-info {
   height: 180px;
@@ -135,8 +162,8 @@ section {
   height: inherit;
   border-radius: 5px;
   outline: none;
-  border: none;
   font-weight: 600;
+  border-color: rgb(185, 184, 184);
 }
 .settings-svg {
   margin-left: -20px;
@@ -178,6 +205,9 @@ button:hover {
 }
 .user-fallow-bottom > span {
   display: block;
+}
+.user-fallow-bottom > span > a {
+  font-weight: 600;
 }
 .user-stories-field {
   width: 100%;
@@ -243,16 +273,3 @@ nav {
   width: inherit;
   height: inherit;
 }
-/*
-@media only screen and (max-width: 975px) {
-   L 
-}
-@media only screen and (max-width: 991px) {
-  N 
-}
-@media only screen and (max-width: 767px) {
-   S 
-}
-@media only screen and (max-width: 574px) {
-   XS 
-}*/ ;
